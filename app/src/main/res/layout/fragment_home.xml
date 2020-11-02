@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consHomeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="IMEI:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStatusLocation"
+        style="@style/GPS_info_item"
+        android:text="@string/text_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home" />
+
+    <TextView
+        android:id="@+id/tvStatusLocationValue"
+        style="@style/GPS_info_item_value"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStatusLocation"
+        app:layout_constraintEnd_toStartOf="@+id/butSetGps"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toEndOf="@+id/tvAllDistance"
+        app:layout_constraintTop_toTopOf="@+id/tvStatusLocation" />
+
+    <Button
+        android:id="@+id/butSetGps"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/text_gps_on"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStatusLocationValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvStatusLocationValue" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        style="@style/GPS_info_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatusLocation" />
+
+    <TextView
+        android:id="@+id/tvTimeValue"
+        style="@style/GPS_info_item_value"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTime"
+        app:layout_constraintStart_toEndOf="@+id/tvAllDistance"
+        app:layout_constraintTop_toTopOf="@+id/tvTime" />
+
+    <TextView
+        android:id="@+id/tvAllDistance"
+        style="@style/GPS_info_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_all_dist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime" />
+
+    <TextView
+        android:id="@+id/tvAllDistanceValue"
+        style="@style/GPS_info_item_value"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAllDistance"
+        app:layout_constraintStart_toEndOf="@+id/tvAllDistance"
+        app:layout_constraintTop_toTopOf="@+id/tvAllDistance" />
+
+    <Button
+        android:id="@+id/butForceSend"
+        style="@android:style/Widget.Material.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/text_forse_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDataSendStatusValue" />
+
+    <View
+        android:id="@+id/devGpsEdit"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@id/tvAllDistance" />
+
+
+    <TextView
+        android:id="@+id/tvDataSend"
+        style="@style/GPS_info_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_data_to_send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/devGpsEdit" />
+
+    <TextView
+        android:id="@+id/tvDataSendValue"
+        style="@style/GPS_info_item_value"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDataSend"
+        app:layout_constraintStart_toEndOf="@+id/tvDataSend"
+        app:layout_constraintTop_toTopOf="@+id/tvDataSend" />
+
+    <TextView
+        android:id="@+id/tvDataSendTime"
+        style="@style/GPS_info_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_send_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDataSend" />
+
+    <TextView
+        android:id="@+id/tvDataSendTimeValue"
+        style="@style/GPS_info_item_value"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDataSendTime"
+        app:layout_constraintStart_toEndOf="@+id/tvDataSend"
+        app:layout_constraintTop_toTopOf="@+id/tvDataSendTime" />
+
+    <TextView
+        android:id="@+id/tvDataSendStatus"
+        style="@style/GPS_info_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_send_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDataSendTime" />
+
+    <TextView
+        android:id="@+id/tvDataSendStatusValue"
+        style="@style/GPS_info_item_value"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDataSendStatus"
+        app:layout_constraintStart_toEndOf="@+id/tvDataSend"
+        app:layout_constraintTop_toTopOf="@+id/tvDataSendStatus" />
+
+
+    <Button
+        android:id="@+id/butStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/text_stop"
+        app:layout_constraintBottom_toBottomOf="@+id/butStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/butStart"
+        app:layout_constraintTop_toTopOf="@+id/butStart"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/butStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/text_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/butStop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

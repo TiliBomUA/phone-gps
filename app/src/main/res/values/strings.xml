@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">GPSTLKA</string>
+    <string name="title_home">Home</string>
+    <string name="title_map">Map</string>
+    <string name="title_settings">Setting</string>
+    <string name="permission_rationale">Permission rationale</string>
+    <string name="text_gps_on">GPS ON</string>
+    <string name="text_network_on">Network ON</string>
+    <string name="text_off">OFF</string>
+    <string name="permission_for_imei">Permission for imei</string>
+    <string name="permission_for_imei_active">Please Active Permission for imei</string>
+    <string name="permission_for_locations">Permission for Location</string>
+    <string name="permission_for_locations_active">Please Active Permission for Location</string>
+    <string name="text_status">Статус:</string>
+    <string name="text_time">Время:</string>
+    <string name="text_all_dist">Дистанция:</string>
+    <string name="text_forse_send">Отправить</string>
+    <string name="text_data_to_send">Данные на отправку</string>
+    <string name="text_send_time">Время отправки:</string>
+    <string name="text_send_status">Send status:</string>
+    <string name="text_stop">STOP</string>
+    <string name="text_start">Start</string>
+    <string name="title_activity_del_maps">Map</string>
+    <string name="text_server">Сервер</string>
+    <string name="text_local">Локально</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting_time_interval">GPS опрос (сек)</string>
+    <string name="setting_time_interval_fast">GPS опрос уск. (сек)</string>
+    <string name="setting_distance_interval">Дистанция (м)</string>
+    <string name="setting_server_send_time">Время отправления (мин)</string>
+    <string name="setting_server_send_distance">отправка дистанция (м)</string>
+    <string name="setting_data_save_day">Хранить данные (дней)</string>
+    <string name="setting_auto_exit">Авто выключение</string>
+    <string name="text_need_permission_imei">Необходимо разрешить права на IMEI</string>
+    <string name="text_gps_wona_on">GPS позиционирование выключено, не желаете включить?</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_ok">Ok</string>
+
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="GPS"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGPS"
+        app:layout_constraintEnd_toStartOf="@+id/tvGPS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvGPS" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGPS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvGPS"
+        app:layout_constraintTop_toTopOf="@+id/tvGPS" />
+
+
+    <TextView
+        android:id="@+id/tvTimeInterval"
+        style="@style/GPS_info_item"
+        android:text="@string/setting_time_interval"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimeIntervalValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGPS" />
+
+    <EditText
+        android:id="@+id/tvTimeIntervalValue"
+        style="@style/GPS_info_item_value_editable"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvTimeInterval"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTimeInterval" />
+
+    <TextView
+        android:id="@+id/tvTimeIntervalFast"
+        style="@style/GPS_info_item"
+        android:layout_marginTop="24dp"
+        android:text="@string/setting_time_interval_fast"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimeIntervalFastValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeInterval" />
+
+    <EditText
+        android:id="@+id/tvTimeIntervalFastValue"
+        style="@style/GPS_info_item_value_editable"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvTimeIntervalFast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTimeIntervalFast" />
+
+    <TextView
+        android:id="@+id/tvDistanceMaxInterval"
+        style="@style/GPS_info_item"
+        android:layout_marginTop="24dp"
+        android:text="@string/setting_distance_interval"
+        app:layout_constraintEnd_toStartOf="@+id/tvDistanceMaxIntervalValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeIntervalFast" />
+
+    <EditText
+        android:id="@+id/tvDistanceMaxIntervalValue"
+        style="@style/GPS_info_item_value_editable"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvDistanceMaxInterval"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDistanceMaxInterval" />
+
+
+    <TextView
+        android:id="@+id/tvServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="SERVER"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDistanceMaxInterval" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tvServer"
+        app:layout_constraintEnd_toStartOf="@+id/tvServer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvServer" />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tvServer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvServer"
+        app:layout_constraintTop_toTopOf="@+id/tvServer" />
+
+    <TextView
+        android:id="@+id/tvDataSendTime"
+        style="@style/GPS_info_item"
+        android:layout_marginTop="24dp"
+        android:text="@string/setting_server_send_time"
+        app:layout_constraintEnd_toStartOf="@+id/tvDataSendTimelValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvServer" />
+
+    <EditText
+        android:id="@+id/tvDataSendTimelValue"
+        style="@style/GPS_info_item_value_editable"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvDataSendTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDataSendTime" />
+
+    <TextView
+        android:id="@+id/tvDataSendDistance"
+        style="@style/GPS_info_item"
+        android:layout_marginTop="24dp"
+        android:text="@string/setting_server_send_distance"
+        app:layout_constraintEnd_toStartOf="@+id/tvDataSendDistanceValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDataSendTime" />
+
+    <EditText
+        android:id="@+id/tvDataSendDistanceValue"
+        style="@style/GPS_info_item_value_editable"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvDataSendDistance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDataSendDistance" />
+
+    <TextView
+        android:id="@+id/tvDataSaveDay"
+        style="@style/GPS_info_item"
+        android:layout_marginTop="24dp"
+        android:text="@string/setting_data_save_day"
+        app:layout_constraintEnd_toStartOf="@+id/tvDataSaveDayValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDataSendDistance" />
+
+    <EditText
+        android:id="@+id/tvDataSaveDayValue"
+        style="@style/GPS_info_item_value"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tvDataSaveDay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDataSaveDay" />
+
+    <Button
+        android:id="@+id/butSettingsSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Сохранить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbAutoExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/setting_auto_exit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDataSaveDay" />
+
+    <EditText
+        android:id="@+id/edAutoExitTimeValue"
+        style="@style/GPS_info_item_value_editable"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="time"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/cbAutoExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cbAutoExit" />
+
+
+    <!--
+        android:layout_width="0dp"
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
