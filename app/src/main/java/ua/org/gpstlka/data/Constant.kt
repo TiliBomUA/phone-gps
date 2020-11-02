@@ -18,5 +18,5 @@ object Constant {
     const val SAVE_FILE_DAYS :Int = 30
 
     const val isAutoExit: Boolean = false
-    const val  timeAutoExit: String = "17:00"
+    const val  timeAutoExit: String = "18:00"
 }
