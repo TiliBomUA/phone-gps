@@ -14,8 +14,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">8dp</item>
         <item name="android:layout_marginTop">16dp</item>
-
-   <!--     <item name="android:background">?attr/panelBackground</item>-->
     </style>
 
     <style name="GPS_info_item_value">
